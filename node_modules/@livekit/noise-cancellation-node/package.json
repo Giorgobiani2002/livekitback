@@ -1,0 +1,47 @@
+{
+  "name": "@livekit/noise-cancellation-node",
+  "version": "0.1.9",
+  "description": "Livekit plugin for noise cancellation of inbound AudioStream for NodeJS",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "webrtc",
+    "realtime",
+    "audio",
+    "livekit"
+  ],
+  "author": "LiveKit",
+  "license": "See https://livekit.io/legal/terms-of-service",
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "publint": "^0.3.10",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@livekit/rtc-node": "^0.13.11",
+    "tsx": "^4.19.3"
+  },
+  "optionalDependencies": {
+    "@livekit/noise-cancellation-darwin-arm64": "0.1.9",
+    "@livekit/noise-cancellation-darwin-x64": "0.1.9",
+    "@livekit/noise-cancellation-linux-x64": "0.1.9",
+    "@livekit/noise-cancellation-linux-arm64": "0.1.9",
+    "@livekit/noise-cancellation-win32-x64": "0.1.9"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint:package": "publint",
+    "typecheck": "tsc --noEmit"
+  }
+}
