@@ -21,7 +21,7 @@ importers:
         specifier: ~1.0.15
         version: 1.0.15(@livekit/agents@1.0.15(@livekit/rtc-node@0.13.20)(zod@3.25.76))(@livekit/rtc-node@0.13.20)
       '@livekit/noise-cancellation-node':
-        specifier: ~0.1.9
+        specifier: ^0.1.9
         version: 0.1.9
       axios:
         specifier: ^1.13.1
